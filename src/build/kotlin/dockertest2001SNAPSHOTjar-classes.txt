@@ -1,0 +1,1 @@
+/Users/zlate87/workspace/docker-test2/build/classes/kotlin/main/com/zlatko/dockertest2/DockerTest2Application.class:/Users/zlate87/workspace/docker-test2/build/classes/kotlin/main/com/zlatko/dockertest2/DockerTest2ApplicationKt.class:/Users/zlate87/workspace/docker-test2/build/classes/kotlin/main/com/zlatko/dockertest2/HelloWorldController.class
