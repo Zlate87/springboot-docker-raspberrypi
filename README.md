@@ -1,5 +1,7 @@
 # springboot-docker-raspberrypi
 
+This repository contains a hello world spring boot applicaiton with a docker file that helps running it on rasbery pi.
+
 ### Building a docker image with the application
 
 Just run:
