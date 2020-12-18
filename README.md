@@ -7,9 +7,10 @@ Just run:
 ```
 ./gradlew clean build
 docker build -t zlate87/springboot-docker-raspberrypi .
+docker push zlate87/springboot-docker-raspberrypi
 ```
 
-### Running a docker container
+### Running a docker container on the Raspberry Pi
 
 Just run:
 
