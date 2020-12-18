@@ -1,6 +1,6 @@
 # springboot-docker-raspberrypi
 
-## Building a docker image with the application
+### Building a docker image with the application
 
 Just run:
 
@@ -8,7 +8,7 @@ Just run:
 docker build -t zlate87/springboot-docker-raspberrypi .
 ```
 
-## Running a docker container
+### Running a docker container
 
 Just run:
 
