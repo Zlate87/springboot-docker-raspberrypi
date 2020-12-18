@@ -5,6 +5,7 @@
 Just run:
 
 ```
+./gradlew clean build
 docker build -t zlate87/springboot-docker-raspberrypi .
 ```
 
