@@ -1,14 +1,15 @@
+import org.jetbrains.kotlin.daemon.nowSeconds
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 	id("org.springframework.boot") version "2.4.1"
 	id("io.spring.dependency-management") version "1.0.10.RELEASE"
+	id("com.palantir.docker") version "0.25.0"
 	kotlin("plugin.spring") version "1.4.21"
 	kotlin("jvm") version "1.4.21"
 }
 
 group = "com.zlate87"
-version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
@@ -32,4 +33,12 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+docker {
+	name = "zlate87/springboot-docker-raspberrypi"
+	setDockerfile(File("docker/Dockerfile"))
+	files( "build/libs/springboot-docker-raspberrypi.jar")
+	tag("latest", "zlate87/springboot-docker-raspberrypi:latest")
+	tag("timestamp", "zlate87/springboot-docker-raspberrypi:${nowSeconds()}")
 }

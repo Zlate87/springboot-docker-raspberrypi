@@ -7,9 +7,7 @@ This repository contains a hello world spring boot applicaiton with a docker fil
 Just run:
 
 ```
-./gradlew clean build
-docker build -t zlate87/springboot-docker-raspberrypi .
-docker push zlate87/springboot-docker-raspberrypi
+./gradlew clean build dockerTagsPush
 ```
 
 ### Running a docker container on the Raspberry Pi
